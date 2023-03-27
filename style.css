@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62,5%;
+    box-sizing: border-box;
+}
+
+:root{
+    --redDark: #c11a1a;
+    --white: white;
+    --gray: #a09c9c;
+    --green: #88cb00;
+    --greenDark: #6da007;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.logoPomo {
+    width: 13rem;
+    margin-top: .5rem;
+}
+
+/* Sessions */
+
+.sessions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    width: 80%;
+    margin: 2.5rem auto 0;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    
+
+    padding: .5rem;
+}
+
+.nameSessions {
+    color: var(--redDark);
+}
+
+.sessions img{
+    width: 2.2rem;
+}
+
+.fire {
+    background-image: url("img/sessions.svg") cover;
+}
+
+.contSessions {
+    position: absolute;
+    top: .95rem;
+    left: 1.2rem;
+
+    color: var(--white);
+}
+
+/* Timer */
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    
+    border-radius: 1rem;
+
+    background: linear-gradient(150deg, rgba(254,123,123,1) 0%, rgba(193,26,26,1) 100%);
+}
+
+.whiteBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+
+    padding: 2rem;
+    width: 80%;
+    height: 90%;
+
+    border-radius: 100%;
+
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.07);
+}
+
+.time {
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+/* Controls */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+
+    background-color: var(--redDark);
+
+    margin: 1rem auto 0;
+    width: 80%;
+    padding: .5rem;
+
+    border-radius: .5rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.122);
+    border: none;
+    width: 3rem;
+
+    border-radius: .5rem;
+    padding: .5rem;
+
+    cursor: pointer;
+
+
+}
+
+/* setSessions */
+
+.setSessions {
+
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+
+    background-color: var(--green);
+
+    margin: 1rem auto 0;
+    width: 80vw;
+    padding: .5rem;
+
+    border-radius: .5rem;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: .5rem;
+    border: none;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    color: var(--gray);
+
+}
+
+label {
+    color: var(--white);
+    font-size: .8rem;
+}
+
+/* BOTÃO */
+
+.gogo{
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem auto 1rem;
+    width: 80%;
+    padding: .5rem;
+
+    text-align: center;
+
+    background-color: var(--greenDark);
+
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+/* RODAPE */
+
+.rodape {
+    font-size: .8rem;
+    color: var(--gray);
+    font-weight: 300;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+/* ANIMATIONS */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+           
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+            
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+/*Media query*/
+
+@media (min-width: 300px)
+{
+
+  .timer {
+    width: 280px;
+    height: 280px;
+    }
+
+  .sessions, .setSessions, .controls, .gogo {
+    width: 280px;
+    
+  }
+
+  .whiteBox {
+    width: 200px;
+  }
+
+}

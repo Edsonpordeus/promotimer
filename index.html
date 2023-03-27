@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pomotimer</title>
+
+</head>
+<body>
+
+    
+    <div class="page">
+
+       <nav>
+            <img class="logoPomo" src="img/pomotimerZero.svg" alt="Logo Pomotimer">
+       </nav> 
+
+       <div class="container">
+
+            <div class="sessions">
+
+                <div class="fire">
+
+                    <img class="" src="img/sessions.svg" alt="">
+                    <p class="contSessions" >0</p>
+
+                </div>
+
+                <p class="nameSessions">Sessions</p>
+
+            </div>
+
+            <div class="timer">
+
+                <div class="whiteBox">
+                    <h1 class="time">00:00</h1>
+                </div>
+           
+            </div>
+            
+            <div class="controls">
+
+                <button class="scale-up-center" id="buttonPlay"> <img src="img/play.svg" alt=""></button>
+                <button class="scale-up-center hide" id="buttonPause"> <img src="img/pause.svg" alt=""></button>
+                <button class="" id="buttonStop"> <img src="img/stop.svg" alt=""></button>
+                <button class="scale-up-center" id="buttonTimer"> <img src="img/timer.svg" alt=""></button>
+
+            </div>
+
+            <div class="pomoSettings scale-up-center hide">
+                <div class="setSessions">
+
+                    <div class="inp">
+                        <button> <img src="img/sessionsWhite.svg" alt=""></button>
+                        <label> Session</label>
+                    </div>
+
+                    <div class="inp">
+                        
+                        <input id="inputMinutes" type="number" value="" max="59" min="0">
+                        <label for="inputMinutes"> Minutes</label>
+                        
+                    </div>
+
+                    <div class="inp">
+                        
+                        <input id="inputSeconds" type="number" value="" max="59" min="0">
+                        <label for="inputSeconds"> Seconds </label>
+                        
+                    </div>                
+
+                </div>
+
+                <div class="setSessions">
+
+                    <div class="inp">
+                        <button> <img src="img/rest.svg" alt=""></button>
+                        <label> Rest</label>
+                    </div>
+
+                    <div class="inp">
+                        
+                        <input id="inputMinutesRest" type="number" value="" max="59" min="0">
+                        <label for="inputMinutesRest"> Minutes</label>
+                        
+                    </div>
+
+                    <div class="inp">
+                        
+                        <input id="inputSecondsRest" type="number" value="" max="59" min="0">
+                        <label for="inputSecondsRest"> Seconds </label>
+                        
+                </div>
+
+                
+                </div>
+                
+                <button class="gogo" id="goButton"> GO!</button>
+
+            </div>
+
+            <p class="rodape">Deselvovido por Calango Arte Mídia</p>
+    </div>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>
